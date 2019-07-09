@@ -1,0 +1,71 @@
+.screen {
+    position: relative;
+    display: block;
+}
+
+.head-screen {
+    background-color: rgb(243, 249, 255);
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(243, 249, 255, 0.5),
+            rgba(243, 249, 255, 0.7),
+            rgba(243, 249, 255, 1),
+            rgb(243, 249, 255)),
+            url(../img/header_back-min.png);
+    background-repeat: no-repeat;
+    background-position: -300px 0;
+    height: 650px;
+}
+
+.head-screen::after {
+    content: "";
+    background-image: url(../img/wave_bottom.png);
+    position: absolute;
+    width: 100%;
+    height: 109px;
+    bottom: -100px;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.head-screen-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img img {
+    width: 81px;
+}
+
+.logo-text {
+    margin-left: 17px;
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    width: 647px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.feet {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 1;
+}
