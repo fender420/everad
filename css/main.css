@@ -21,12 +21,12 @@ p, ul {
     background-image: url(../img/header_back-min.png);
     background-repeat: no-repeat;
     background-position: -300px 0;
-    
+    margin-bottom: 170px;
 }
 
 .head-screen::after {
     content: "";
-    background-image: url(../img/wave_bottom-min.png);
+    background: url(../img/wave_bottom-min.png) 0 0 no-repeat;
     position: absolute;
     width: 100%;
     height: 109px;
@@ -37,6 +37,8 @@ p, ul {
     position: relative;
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .head-screen-header {
@@ -548,4 +550,622 @@ p, ul {
 
 .form-security-block img {
     margin-right: 10px;
+}
+
+.second-screen-main {
+    
+}
+
+.h2 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.second-screen-header {
+    margin-top: 250px;
+}
+
+.second-screen-header::before {
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+    background-image: url(../icons/screen_icon.png);
+}
+
+.second-screen-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.second-screen-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.second-screen-item {
+    width: 33.333%;
+    position: relative;
+    margin-right: 50px;
+}
+
+.second-screen-item:last-child {
+    margin-right: 0;
+}
+
+.second-screen-item-svg-obj {
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    top: -38px;
+    left: -45px;
+    transform: rotate(170deg);
+}
+
+.svg-obj {
+    overflow: visible;
+}
+
+.second-screen-item-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.second-screen-item-text {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.second-screen-item-number {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.second-screen-item:first-child .second-screen-item-number {
+    background-color: #ec9a6a;
+}
+
+.second-screen-item:nth-child(2) .second-screen-item-number {
+    background-color: #e47643;
+}
+
+.second-screen-item:nth-child(3) .second-screen-item-number {
+    background-color: #ec5b19;
+}
+
+.second-screen-item-desc {
+    position: relative;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.second-screen-item-desc::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: -18px;
+    background-color: #becbd8;
+}
+
+.second-screen-stat {
+    position: relative;
+    width: 100%;
+    border: 3px solid #f4d3bb;
+    border-radius: 5px;
+    padding: 40px 10px;
+    text-align: center;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.second-screen-stat::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 37px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../icons/stat.svg);
+    z-index: 4;
+}
+
+.second-screen-stat::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 10px;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 3;
+}
+
+.stat-text {
+    font-size: 22px;
+    color: #444;
+    text-align: center;
+}
+
+.stat-text-select {
+    font-weight: 500;
+    color: #000;
+}
+
+.second-screen::after {
+    content: "";
+    background: url(../img/wave_top-min.png) 0 0 no-repeat;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 133px;
+    bottom: -133px;
+    z-index: 1;
+}
+
+.third-screen {
+    background: #f3f9ff;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.third-screen-header {
+    margin-top: 110px;
+    margin-bottom: 80px;
+    line-height: 1;
+}
+
+.third-screen-header::before {
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+    background-image: url(../icons/screen_icon.png);
+}
+
+.third-screen-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.third-screen-main-item {
+    position: relative;
+    width: 33%;
+    background-color: #fff;
+    border-top: 5px solid #a8c53a;
+    border-radius: 7px;
+    padding: 65px 25px 35px;
+    text-align: center;
+}
+
+.third-screen-main-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.third-screen-main-item:first-child::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    background-color: #f3f9ff;
+    background-image: url(../icons/stars.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.third-screen-main-item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    background-color: #f3f9ff;
+    background-image: url(../icons/gel.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.third-screen-main-item:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    background-color: #f3f9ff;
+    background-image: url(../icons/pills.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.third-screen-main-item-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.third-screen-main-item-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.third-screen-main-item-title span {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666;
+}
+
+.but {
+    position: relative;
+    font-size: 24px;
+    font-weight: 900;
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+
+.but::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    background-color: #d2dce6;
+}
+
+.but::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    top: -36px;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-right: 1px solid #d2dce6;
+    border-bottom: 1px solid #d2dce6;
+}
+
+.third-screen-main-item-text {
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.third-screen-main-item-text span {
+    font-weight: 500;
+}
+
+.third-screen-conclusion {
+    position: relative;
+    width: 100%;
+    border: 3px solid #f4d3bb;
+    border-radius: 5px;
+    padding: 25px 10px;
+    text-align: center;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.third-screen-conclusion::before {
+    content: "!";
+    position: absolute;
+    font-size: 70px;
+    font-weight: 900;
+    width: 170px;
+    height: 50px;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #f4d3bb;
+    background-color: #f3f9ff;
+}
+
+.third-screen-conclusion::after {
+    content: "вывод:";
+    position: absolute;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.conclusion-text {
+    font-size: 21px;
+    color: #444;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.conclusion-text-select {
+    font-weight: 500;
+    color: #000;
+}
+
+.third-screen::after {
+    content: "";
+    background: url(../img/wave_bottom-min.png) 0 0 no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 109px;
+    bottom: -90px;
+}
+
+.fourth-screen {
+    padding: 80px 0 60px 0;
+}
+
+.fourth-screen-header::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    background-image: url(../icons/screen_icon2.png);
+}
+
+.fourth-screen-header {
+    line-height: 1;
+}
+
+.fourth-screen-header span {
+    color: #fa4f01;
+}
+
+.fourth-screen-text {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.fourth-screen-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    margin-bottom: 25px;
+}
+
+.fourth-screen-main-item {
+    position: relative;
+    width: 33%;
+    border: 4px solid #f64d01;
+    border-radius: 10px;
+    text-align: center;
+    padding: 80px 10px 30px;
+}
+
+.fourth-screen-main-item:first-child::before {
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 65px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/cream-min.png) 0 0 no-repeat;
+    z-index: 1;
+}
+
+.fourth-screen-main-item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 105px;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/alter-min.png) 0 0 no-repeat;
+    z-index: 1;
+}
+
+.fourth-screen-main-item:last-child::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 56px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/miko_pills-min.png) 0 0 no-repeat;
+    z-index: 1;
+}
+
+.fourth-screen-main-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.fourth-screen-main-item:last-child {
+    border: 4px solid #62bd1f;
+}
+
+.fourth-screen-main-item-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -58px;
+    left: 50%;
+    background-color: #fff;
+    border-right: 4px solid #f64d01;
+    border-bottom: 4px solid #f64d01;
+    border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-radius: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.fourth-screen-main-item:last-child .fourth-screen-main-item-circle {
+    border-right: 4px solid #62bd1f;
+    border-bottom: 4px solid #62bd1f;
+}
+
+.fourth-screen-main-item-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fourth-screen-main-item-text {
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.fourth-screen-main-item-text span {
+    font-weight: 500;
+}
+
+.fourth-screen-why {
+    position: relative;
+    width: 860px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+
+.fourth-screen-why::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -4px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f64d01, #62bd1f);
+}
+
+.fourth-screen-why span {
+    color: #f64d01;
+}
+
+.fourth-screen::after {
+    content: "";
+    background: url(../img/wave_top-min.png) 0 -80px no-repeat;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 90px;
+    bottom: -55px;
+    z-index: 1;
+}
+
+.fifth-screen {
+    background-color: #f3f9ff;
+    padding-top: 90px;
+}
+
+.fifth-screen-header::before {
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+    background-image: url(../icons/screen_icon.png);
+}
+
+.fifth-screen-header span {
+    color: #f64d01;
+}
+
+.fifth-screen-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding-right: 30px;
+}
+
+.fifth-screen-main-glass {
+    margin-right: 30px;
+}
+
+.fifth-screen-main-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.fifth-screen-main-list-item-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 7px solid #f64d01;
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px #eae4d8;
+}
+
+.fifth-screen-main-list-item-text {
+    position: relative;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.fifth-screen-main-list-item-text::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: -20px;
+    left: 0;
+    background-color: #7bbf1c;
 }
